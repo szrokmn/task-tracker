@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-const AddTaskForm = () => {
+const AddTaskForm = ({tasks, setTasks}) => {
 
 const [task, setTask] = useState("")
 const [day, setDay] = useState("")
@@ -9,7 +9,7 @@ const handleSubmit = (e) => {
   e.preventDefault();
   const id = new Date().getTime();
   const newTask = {id:id, task:task, day:day, isDone:false};
-  setTask([...task, newTask]);
+  setTasks([...tasks, newTask]);
   setTask('');
   setDay('');
 }
