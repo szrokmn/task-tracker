@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button"
 import axios from 'axios'
 
 const Home = () => {
-
+ 
   const [isOpen, setIsOpen] = useState(false)
   const [text, setText] = useState("Show Task Bar") 
   const [task, setTask] = useState([]);
@@ -27,12 +27,11 @@ const Home = () => {
     getTask()
   }, []);
   
-
   return (
     <>
       <Button variant="danger" size="lg" onClick={(e) => {toggle()}}>{text}</Button> 
       {isOpen && <AddTaskForm/>}
-      <TaskList/>
+      <TaskList task={task}/>
       
     </>
   )
