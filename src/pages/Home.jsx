@@ -28,12 +28,12 @@ const Home = () => {
   }, []);
   
   return (
-    <>
-      <Button variant="danger" size="lg" onClick={(e) => {toggle()}}>{text}</Button> 
+    <div className="mt-4 d-flex justify-content-center flex-column">
+      <Button variant="danger" onClick={(e) => {toggle()}}>{text}</Button> 
       {isOpen && <AddTaskForm/>}
       <TaskList task={task}/>
       
-    </>
+    </div>
   )
 }
 

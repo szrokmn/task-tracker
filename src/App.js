@@ -4,10 +4,10 @@ import Home from "../src/pages/Home"
 
 function App() {
   return (
-    <>
+    <div className='container'>
       <Header/>
       <Home/>
-    </>
+    </div>
   );
 }
 
