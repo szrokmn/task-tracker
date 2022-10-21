@@ -1,10 +1,10 @@
 import React from 'react'
 import {RiDeleteBack2Fill} from "react-icons/ri"
 
-const TaskList = ({task}) => {
+const TaskList = ({a}) => {
   return (
     <div>
-      {task.map((item) => {
+      {a.map((item) => {
         const {id, task, date} = item;
         return(
           <div div key={id} className="mt-2 d-flex justify-content-between bg-secondary rounded-2 p-2">

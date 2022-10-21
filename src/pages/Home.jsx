@@ -30,8 +30,8 @@ const Home = () => {
   return (
     <div className="mt-4 d-flex justify-content-center flex-column">
       <Button variant="danger" onClick={(e) => {toggle()}}>{text}</Button> 
-      {isOpen && <AddTaskForm/>}
-      <TaskList task={task}/>
+      {isOpen && <AddTaskForm b={getTask}/>}
+      <TaskList a={task}/>
       
     </div>
   )
