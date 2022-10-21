@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AddTaskForm = () => {
+const ShowTasks = () => {
   return (
     <div>
       
@@ -8,4 +8,5 @@ const AddTaskForm = () => {
   )
 }
 
-export default AddTaskForm
+export default ShowTasks
+
